@@ -10,12 +10,11 @@ def turn_count(board)
 end
 
 def current_player(board)
-  plays = turn_count(board)
-  case plays
-  when plays.to_i % 2 = 0
-    player = "X"
-  else
-    player = "0"
-  end
-  player
+  if plays.to_i % 2 == 0
+      player = "X"
+    else
+      player = "O"
+    end
+    player
+
 end
