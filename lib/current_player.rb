@@ -12,9 +12,7 @@ end
 def current_player(board)
   plays = turn_count(board)
   case plays
-  when plays.to_i % 0 == 0
-    player = "X"
-  when plays.to_i == 0
+  when plays.to_i % 2 == 0
     player = "X"
   else
     player = "0"
